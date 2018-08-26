@@ -1,14 +1,20 @@
+var red;
+var blue;
+var green;
+
 // FSJS - Random Quote Generator
 
 /* I created an array[] of quote objects{} and I named it (quotes)
 
 */
+
 var quotes = [
   { quote: "The biggest risk is not taking any risk... In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks.",
     source: 'Mark Zuckerberg',
     citation: "Facebook's Mark Zuckerberg -- Insights For Entrepreneurs",
     year: '2011' ,
     occupation: '--Former Programmer/Businessman',
+    Image: 'images/MarkZ.jpg',
   },
 
   {
@@ -17,6 +23,7 @@ var quotes = [
     citation: 'Informal Sociology: A Casual Introduction to Sociological Thinking',
     year: '1963' ,
     occupation:'--Book Author',
+    Image: 'images/BruceC.jpg',
   },
 
   {
@@ -25,6 +32,7 @@ var quotes = [
     citation: 'https://www.brainyquote.com/quotes/charles_r_swindoll_388332',
     year: '2011' ,
     occupation: '--Pastor/Author',
+    Image: 'images/CharlesR.jpg',
   },
 
   {
@@ -33,6 +41,7 @@ var quotes = [
     citation: 'https://www.brainyquote.com/quotes/thomas_a_edison_149049',
     year: '1931' ,
     occupation: '--Inventor/Businessman',
+    Image: 'images/ThomasH.jpg',
   },
 
   {
@@ -40,7 +49,8 @@ var quotes = [
     source: 'Robert H. Schuller',
     citation: 'https://www.brainyquote.com/quotes/robert_h_schuller_155998',
     year: '2015' ,
-    occupation: '--Pastor/Motivational Speaker'
+    occupation: '--Pastor/Motivational Speaker',
+    Image: 'images/RobertH.jpg',
   }
 ];
 
@@ -58,7 +68,15 @@ function getRandomQuote(array) {
 return randomQuote;
 }
 
-
+//Function to generate a random background color
+function randomBackgroundColor() {
+  var anyColor;
+  red = Math.floor(Math.random() * 256);
+  blue = Math.floor(Math.random() * 256);
+  green = Math.floor(Math.random() * 256);
+  anyColor = 'rbg(' + red + ',' + blue + ',' + green + ')';
+  return anyColor;
+}
 
 
 // I created a second function and  gave it (printQuote) as its name.
@@ -69,13 +87,17 @@ function printQuote() {
   message += "<p class='source'>" + result.source;
   message += "<span class='citation'>" + result.citation + "</span>";
   message += "<span class='year'>" + result.year + "</span>";
-  message += "<span class='occupation'>" + result.occupation + "</span>"
+  message += "<span class='occupation'>" + result.occupation + "</span>";
+  message += "<span class='Image'>" + result.Image + "</span>";
   message += "</p>";
 
     document.getElementById('quote-box').innerHTML = message;
 }
 
 printQuote();
+randomBackgroundColor();
+document.getElementById('bgcolor').style.backgroundcolor = randomBackgroundColor();
+
 
 
 
