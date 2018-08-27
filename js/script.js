@@ -71,9 +71,9 @@ return randomQuote;
 //Function to generate a random background color
 function randomBackgroundColor() {
   var anyColor;
-  red = Math.floor(Math.random() * 256);
-  blue = Math.floor(Math.random() * 256);
-  green = Math.floor(Math.random() * 256);
+  red = Math.floor(Math.random() * 256 );
+  blue = Math.floor(Math.random() * 256 );
+  green = Math.floor(Math.random() * 256 );
   anyColor = 'rbg(' + red + ',' + blue + ',' + green + ')';
   return anyColor;
 }
