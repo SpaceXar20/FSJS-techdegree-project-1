@@ -61,12 +61,9 @@ choose and then return a random quote
 object from the array
 */
 function getRandomQuote(array) {
-  var quoteIndex = Math.floor( Math.random() * (quotes.length));
-  for (var i = 0; i < array.length; i++) {
-  var randomQuote = array[quoteIndex];
+   return array[Math.floor(Math.random() * array.length)];      
 }
-return randomQuote;
-}
+
 
 //Function to generate a random background color
 function randomBackgroundColor() {
