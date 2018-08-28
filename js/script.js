@@ -14,7 +14,7 @@ var quotes = [
     citation: "Facebook's Mark Zuckerberg -- Insights For Entrepreneurs",
     year: '2011' ,
     occupation: '--Former Programmer/Businessman',
-    Image: 'images/MarkZ.jpg',
+    Image: 'images/MarkZ2.jpg',
   },
 
   {
@@ -23,7 +23,7 @@ var quotes = [
     citation: 'Informal Sociology: A Casual Introduction to Sociological Thinking',
     year: '1963' ,
     occupation:'--Book Author',
-    Image: 'images/BruceC.jpg',
+    Image: 'images/author-w-bruce-cameron-dogs.png',
   },
 
   {
@@ -32,7 +32,7 @@ var quotes = [
     citation: 'https://www.brainyquote.com/quotes/charles_r_swindoll_388332',
     year: '2011' ,
     occupation: '--Pastor/Author',
-    Image: 'images/CharlesR.jpg',
+    Image: 'images/chuck-swindoll.jpg',
   },
 
   {
@@ -50,7 +50,7 @@ var quotes = [
     citation: 'https://www.brainyquote.com/quotes/robert_h_schuller_155998',
     year: '2015' ,
     occupation: '--Pastor/Motivational Speaker',
-    Image: 'images/RobertH.jpg',
+    Image: 'images/RobertH2.jpg',
   }
 ];
 
