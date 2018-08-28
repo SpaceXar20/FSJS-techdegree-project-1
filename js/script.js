@@ -71,7 +71,7 @@ function randomBackgroundColor() {
   red = Math.floor(Math.random() * 256 );
   blue = Math.floor(Math.random() * 256 );
   green = Math.floor(Math.random() * 256 );
-  anyColor = 'rbg(' + red + ',' + blue + ',' + green + ')';
+  anyColor = 'rgb(' + red + ',' + blue + ',' + green + ')';
   return anyColor;
 }
 
@@ -87,13 +87,13 @@ function printQuote() {
   message += "<span class='occupation'>" + result.occupation + "</span>";
   message += "<img src=" + result.Image +">";
   message += "</p>";
-
+    document.getElementById('bgcolor').style.backgroundColor = randomBackgroundColor();
     document.getElementById('quote-box').innerHTML = message;
+    randomBackgroundColor();
 }
 
 printQuote();
-randomBackgroundColor();
-document.getElementById('bgcolor').style.backgroundcolor = randomBackgroundColor();
+
 
 
 
