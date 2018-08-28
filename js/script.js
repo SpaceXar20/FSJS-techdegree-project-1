@@ -61,7 +61,7 @@ choose and then return a random quote
 object from the array
 */
 function getRandomQuote(array) {
-   return array[Math.floor(Math.random() * array.length)];      
+   return array[Math.floor(Math.random() * array.length)];
 }
 
 
@@ -85,7 +85,7 @@ function printQuote() {
   message += "<span class='citation'>" + result.citation + "</span>";
   message += "<span class='year'>" + result.year + "</span>";
   message += "<span class='occupation'>" + result.occupation + "</span>";
-  message += "<span class='Image'>" + result.Image + "</span>";
+  message += "<img src=" + result.Image +">";
   message += "</p>";
 
     document.getElementById('quote-box').innerHTML = message;
