@@ -80,6 +80,7 @@ function randomBackgroundColor() {
 function printQuote() {
   var message = "";   // This is the message variable with empty strings
   var result = getRandomQuote(quotes);
+
   message = "<p class='quote'>" + result.quote + "</p>";
   message += "<p class='source'>" + result.source;
   message += "<span class='citation'>" + result.citation + "</span>";
